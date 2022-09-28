@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+<context:annotation-config/>
+<!--First object-->
+
+<bean id="animalheart" class="com.cg.springaw.Heart">
+<property name="nameofAnimal" value="Tiger"/>
+<property name="numberofHeart" value="2"/>
+</bean>
+
+<!--second object-->
+<bean id="Humanheart" class="com.cg.springaw.Heart">
+<property name="nameofAnimal" value="Human"/>
+<property name="numberofHeart" value="1"/>
+</bean>
+
+<bean id="human" class="com.cg.springaw.Human">
+
+</bean>
+</beans>
+
